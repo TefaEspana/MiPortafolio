@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="stylesheet" href="../estilos/style_contacto.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../css/contacto.css" />
+  <link rel="stylesheet" href="../css/navbar_style.css">
+  <link rel="stylesheet" href="../css/footer_style.css">
 </head>
 <body>
-    <a href="../index.html"><h1 class="miPortafolo">Portafolio de Estefania España Chavez</h1></a>
-    <header class="header">
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobreMi.html">Sobre Mi</a></li>
-                <li><a href="misTrabajos.html">Mis Trabajos</a></li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
-        </nav>       
-       <a href="#" class="btn"><button>Contacto</button></a>
-        <div class="whatsapp">
-            <a href="#">
-                <img src="../img/Whatsapp.png" alt="img_logo_whatsapp">
-            </a>
-        </div>            
-    </header>
-    <br>
-    <p> Esta es la pagina de Contacto.</p>
-    <br>       
-    <h2 class="info_contacto_titulo">Enlaces de contacto</h2> 
-    <br>
-    <div class="info_contacto">
-    <ul>
-        <li><a href="https://www.linkedin.com/in/estefania-espana-developer/" target="_blank">Linkedin</a></li>
-        <li><a href="https://github.com/TefaEspana" target="_blank">GitHub</a></li>
-        <li>Correo personal: estefaniaespana18@gmail.com</li>
-    </ul>
-    </div>
-    <br>
-    <footer class="footer">
-        <h2>© 2025 Portafolio de Estefania España.</h2>
-    </footer>
+
+  <!--NAVBAR-->
+<div class="navbar">
+  <ul class="nav-links">
+    <li><a href="../inicio.html" id="navsobremi">SOBRE MÍ</a></li>
+    <li><a href="portafolio.html" id="navportafolio">PORTAFOLIO</a></li>
+    <li><a href="contacto.html" id="navcontacto">CONTACTO</a></li>
+  </ul>
+</div>
+
+  <main>
+    <section class="contacto">
+      <h2 class="contacto__titulo">
+        ¡Haz click en el medio por el que quieres contactarme!
+      </h2>
+
+      <div class="cards">
+        <a href="https://www.linkedin.com/in/estefania-espana-developer/" class="card" id="card-linkedin"
+           target="_blank" rel="noopener">
+          <img src="../imagenes/FORMAS LIBRES/MONTAÑITAS CONTACTO.png" class="card__shape" alt="" />
+          <img src="../imagenes/linkedin.png"  class="card__icon"  alt="LinkedIn" />
+          <span class="card__label">LINKEDIN</span>
+        </a>
+
+        <a href="https://github.com/TefaEspana" class="card" id="card-github"
+           target="_blank" rel="noopener">
+          <img src="../imagenes/FORMAS LIBRES/MONTAÑITAS CONTACTO (2).png"  class="card__shape" alt="" />
+          <img src="../imagenes/github.png"   class="card__icon"  alt="GitHub" />
+          <span class="card__label">GITHUB</span>
+        </a>
+
+        <a href="mailto:estefaniaespana18@gmail.com" class="card" id="card-correo">
+          <img src="../imagenes/FORMAS LIBRES/MONTAÑITAS CONTACTO.png" class="card__shape" alt="" />
+          <img src="../imagenes/correoelectronico.png"   class="card__icon"  alt="Correo" />
+          <span class="card__label">Correo</span>
+        </a>
+
+        <a href="https://wa.me/573172471494" class="card" id="card-whatsapp"
+           target="_blank" rel="noopener">
+          <img src="../imagenes/FORMAS LIBRES/MONTAÑITAS CONTACTO (2).png" class="card__shape" alt="" />
+          <img src="../imagenes/whatsapp.png"   class="card__icon"  alt="WhatsApp" />
+          <span class="card__label">WhatsApp</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!--FOOTER-->
+<footer class="footer">
+  <div class="footer-contenido">
+    <img src="../imagenes/NOMBRE.png" alt="Nombre" class="footer-nombre" />
+    <img src="../imagenes/LOGO TEFA.png" alt="Logo" class="footer-logo" />
+    <img src="../imagenes/SLOGAN.png" alt="Slogan" class="footer-slogan" />
+  </div>
+</footer>
+
+  <!-- JS externo -->
+  <script src="../js/contacto.js" defer></script>
 </body>
-</html
+</html>
