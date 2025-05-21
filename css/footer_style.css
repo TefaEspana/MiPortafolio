@@ -2,14 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-.footer {
-  background-image: url('../imagenes/FORMAS LIBRES/FOOTER.png');
+.container-footer {
   width: 100%;
-  max-height: 100%;
-  height: 10px;
+  height: 320px;
+  background-image: url('../imagenes/FORMAS LIBRES/FOOTER.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2.5em;
+  box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
@@ -19,21 +25,46 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 5em;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  flex-wrap: nowrap;
 }
 
 .footer-contenido img {
-  max-height: 80px;
+  max-height: 100px;
+  width: auto;
   height: auto;
   object-fit: contain;
+  transition: all 0.3s ease;
 }
 
-/* Puedes personalizar individualmente si quieres tamaños distintos: */
 .footer-logo {
   max-height: 100px;
 }
 
-.footer-nombre,
-.footer-slogan {
-  max-height: 70px;
+@media (max-width: 1124px) {
+  .container-footer {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 1rem;
+  }
+
+  .footer-contenido {
+    gap: 1em;
+    flex-wrap: nowrap;
+  }
+
+  .footer-contenido img {
+    max-height: 90px;
+  }
 }
+
+@media (max-width: 896px) {
+  .footer-contenido img {
+    max-height: 40px;
+  }
+}
+
